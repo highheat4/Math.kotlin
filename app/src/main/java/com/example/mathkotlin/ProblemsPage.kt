@@ -38,8 +38,13 @@ class ProblemsPage : AppCompatActivity() {
                 listOfSolutions[problem] = int1 - int2
             }
             "Divide" -> for(problem in listOfProblemsTxt.indices) {
-                var int1 = (1..20).shuffled().first()
-                var int2 = (1..20).shuffled().last()
+                var int1 = (1..400).shuffled().first()
+                var int2List = mutableListOf<Int>()
+                for (number in 1..int1) {
+                    if (int1%number == 0)
+                        int2List.add(number)
+                }
+                var int2 = int2List.shuffled().first()
                 listOfProblemsTxt[problem].setText(""+ int1 + " / " + int2)
                 listOfSolutions[problem] = int1 / int2
             }
@@ -69,18 +74,22 @@ class ProblemsPage : AppCompatActivity() {
 
         Submit.setOnClickListener {
             var correct = true
+            var wrong = 0
             val listOfAnswers = listOf(problem1.text.toString(), problem2.text.toString(),
                 problem3.text.toString(), problem4.text.toString(), problem5.text.toString(),
                 problem6.text.toString(), problem7.text.toString())
             for (solution in listOfSolutions.indices) {
                 if (listOfSolutions[solution].toString() != listOfAnswers[solution]) {
                     correct = false
+                    wrong = solution + 1
                     break
                 }
             }
             if (correct) {
                 val intent: Intent = Intent(applicationContext, MainActivity::class.java)
                 startActivity(intent)
+            } else {
+                Incorrect.text = "Question Wrong: $wrong"
             }
         }
 
