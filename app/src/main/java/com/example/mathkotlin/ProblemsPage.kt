@@ -33,7 +33,7 @@ class ProblemsPage : AppCompatActivity() {
 
             "Subtract" -> for(problem in listOfProblemsTxt.indices) {
                 var int1 = (1..100).shuffled().first()
-                var int2 = (1..100).shuffled().last()
+                var int2 = (1..int1).shuffled().last()
                 listOfProblemsTxt[problem].setText(""+ int1 + " - " + int2)
                 listOfSolutions[problem] = int1 - int2
             }
