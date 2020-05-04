@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="240sp"
+        android:gravity="center"
+        android:text = "Choose A Mode:"
+        android:textColor = "@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        style = "@style/ActionButtonStyle"
+        android:text="Addition"
+        android:id="@+id/Add"
+        />
+    <Button
+        style = "@style/ActionButtonStyle"
+        android:text="Subtraction"
+        android:id="@+id/Subtract"
+        />
+    <Button
+        style = "@style/ActionButtonStyle"
+        android:text="Multiplication"
+        android:id="@+id/Multiply"
+        />
+    <Button
+        style = "@style/ActionButtonStyle"
+        android:text="Division"
+        android:id="@+id/Divide"
+        />
+    <Button
+        style = "@style/ActionButtonStyle"
+        android:text="Mixed"
+        android:id="@+id/Mix"
+        />
+
+</LinearLayout>
