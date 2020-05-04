@@ -3,8 +3,7 @@
 
 I designed this program for a much younger cousin that I would like to tutor. Since said cousin is only a couple years old, I created an app that would test addition, subtraction, multiplication, and division with problem sets of seven. The student is able to choose a problem type. There is also a mixed problem set that would randomize the type of problem given. Each problem is generated using random integer selection from 1-100, 1-20, 1-400, or 1-30 depending on the type selection.
 
-Currently, this app is horribly mean since the app will not let a student go to the main activity page until all 
-7 questions are correct, and only the first incorrect answer will show at a time.
+Currently, the app will not let a student go to the main activity page until all 7 questions are correct, and only the first incorrect answer will show at a time so as to prevent spamming.
 
 
 Using Kotlin:
