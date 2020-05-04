@@ -14,3 +14,5 @@ The hardest part of programming the app would have to be using the User Interfac
 
 For the Future:
 For its current purposes, I feel that the app works pretty well and in a way that it is meant to. I know that my cousin would be able to do the problems properly and without too much of a hassle - currently the keyboard sometimes gets in the way of the problems so it has to be minimized and reopened - but otherwise everything works fine. In the future I would update the UI to be a lot more attention grabbing for children, and perhaps add more futures that test more than basic computation for older students.
+
+Note: I was having github troubles in the beginning and since Android Studio autosaves I didn't have versions uploaded to github - I am happy to go over any of the code or other information though.
